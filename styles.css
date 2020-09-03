@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-height: 100vh;
+  font-size: 1.5rem;
+}
+
+.header {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  transform: uppercase;
+}
+
+.container { 
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  justify-content: space-around;
+}
+
+.container-element {
+  width: 26em;
+  height: 19em;
+}
+
+.error-img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.container-element > .error-img {
+  text-align: center;
+}
+.error-heading {
+  font-size: 50px;
+}
+
+.error-body {
+  margin: 40px 0;
+
+  font-weight: 400;
+}
+
+.home-btn {
+  font-size: 1rem;
+  letter-spacing: -1px;
+  color: #fff;
+  background: #424242;
+  padding: 15px 30px;
+  text-decoration: none;
+  transform: uppercase;
+}
+
+/* Small tablets and screens */
+@media screen and (max-width: 900px) {
+  .error-img {
+    width: 70%;
+  }
+  .error-heading {
+    font-size: 40px;
+  }
+}
+
+/* Large smartphone */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-element {
+    width: 16em;
+    height: 14em;
+  }
+  
+  .error-img {
+    width: 75%;
+  }
+}
