@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-html {
+* {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
-  max-height: 100vh;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
 }
 
@@ -20,36 +25,33 @@ body {
 
 .container { 
   margin: 0 5%;
+  min-height: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  justify-content: space-around;
+
+  padding-bottom: 10%;
 }
 
 .container-element {
+  height: 70%;
   width: 26em;
-  height: 19em;
+
 }
 
 .error-img {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 23rem;
 }
 
-.container-element > .error-img {
-  text-align: center;
-}
 .error-heading {
+  font-weight: 700;
   font-size: 50px;
 }
 
 .error-body {
   margin: 40px 0;
-
   font-weight: 400;
 }
 
@@ -63,13 +65,21 @@ body {
   transform: uppercase;
 }
 
+.footer {
+  position: relative;
+  height: 5%;
+  text-align: center;
+  font-size: 1rem;
+
+}
+
 /* Small tablets and screens */
 @media screen and (max-width: 900px) {
   .error-img {
     width: 70%;
   }
   .error-heading {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -80,11 +90,14 @@ body {
   }
 
   .container-element {
-    width: 16em;
-    height: 14em;
+    width: 100%;
   }
   
   .error-img {
     width: 75%;
+  }
+
+  .footer {
+    margin-top: 60px;
   }
 }
